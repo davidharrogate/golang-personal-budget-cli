@@ -56,7 +56,6 @@ func (b *Budget) AddItem(description string, price float32) error {
 	if b.CurrentCost()+price > b.Max {
 		return errDoesNotFitBudget
 	}
-	Item := Item{Description: description, Price: price}
 	return nil
 }
 
